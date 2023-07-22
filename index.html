@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="app-details">
+        <h1>CURRENCY CONVERSION</h1>
+        <div class="logo">
+            <img src="./vector-logo-currency-exchange-PM8WH9.jpg" alt="" width="140" height="140">
+        </div>
+       </div>
+
+        <label class="amount" for="input">Enter the amount</label>
+            <input type="number" id="input" value="0">
+        
+          <div class="conversion">
+            <div class="from">
+                <select name="select" id="select-cur-one">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NZD">NZD</option>
+                    <option value="MXN">MXN</option>
+    
+                    <option value="RUB">RUB</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="SGD">SGD</option>
+                    <option value="MYR">MYR</option>
+                    <option value="CNY">CNY</option>
+                    <option value="BDT">BDT</option>
+                    <option value="GHS">GHS</option>
+                </select>
+            </div>
+            <i class="fa fa-arrow-right fa-2x" aria-hidden="true" ></i>
+            <div class="to">
+                <select name="select" id="select-cur-two">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                  
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NZD">NZD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="RUB">RUB</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="SGD">SGD</option>
+                    <option value="MYR">MYR</option>
+                    <option value="CNY">CNY</option>
+                    <option value="BDT">BDT</option>
+                    <option value="GHS">GHS</option>
+                    
+
+                </select>
+                </div>
+          </div>
+          <div class="exchange">Exchange Rate :
+            <div id="exchangerate">   </div>
+          </div>
+          <div id="result">
+          </div>
+            <div class="btn">
+                <button id="button">Convert</button>
+        </div>
+      
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
